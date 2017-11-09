@@ -1,3 +1,5 @@
+
+[string]$TestFile = '.\Test-Pester.xml'
 [string]$ModuleName = (Get-ChildItem -Directory).Name
 
 Import-Module psake
