@@ -82,7 +82,7 @@
 
         <templateFile condition="$PLASTER_PARAM_AddTest -eq 'Yes'"
                       source='tests\module.tests.ps1'
-                      destination='${PLASTER_PARAM_ModuleName}\test\${PLASTER_PARAM_ModuleName}.Tests.ps1' />
+                      destination='${PLASTER_PARAM_ModuleName}\tests\${PLASTER_PARAM_ModuleName}.Tests.ps1' />
 
         <requireModule name="Pester" condition="$PLASTER_PARAM_AddTest -eq 'Yes'" minimumVersion="3.4.0"
             message="Without Pester, you will not be able to run the provided Pester test to validate your module manifest file.`nWithout version 3.4.0, VS Code will not display Pester warnings and errors in the Problems panel."/>
